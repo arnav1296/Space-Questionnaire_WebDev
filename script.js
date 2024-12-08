@@ -13,16 +13,16 @@ function showResults() {
     let result = '';
 
     for (let i = 0; i < 5; i++) {
-        const selected = document.querySelector(`input[name=${questions[i]}]:checked`);
+        const selected = document.querySelector('input[name=' + questions[i] + ']:checked');
 
         if (selected) {
             if (selected.value === answers[i]) {
                 score++;
             } else {
-                result += `\nQuestion ${i + 1} Incorrect (Your answer: ${selected.value}, Correct answer: ${answers[i]})`;
+                result += '\nQuestion ' + (i + 1) + ' Incorrect (Your answer: ' + selected.value + ', Correct answer: ' + answers[i] + ')';
             }
         } else {
-            result += `\nQuestion ${i + 1} Unanswered. Correct answer: ${answers[i]}`;
+            result += '\nQuestion ' + (i + 1) + ' Unanswered. Correct answer: ' + answers[i];
         }
     }
 
