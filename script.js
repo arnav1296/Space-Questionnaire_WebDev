@@ -7,7 +7,7 @@ form.addEventListener('submit', function(event) {
 });
 
 function showResults() {
-    const answers = ['venus', 'saturn', 'Cosmos 3M', 'jupiter', 'celestial'];
+    const answers = ['venus', 'saturn', 'Cosmos-3M', 'jupiter', 'celestial'];
     const questions = ['q1', 'q2', 'q3', 'q4', 'q5'];
     let score = 0;
     let result = '';
@@ -26,5 +26,5 @@ function showResults() {
         }
     }
 
-    alert('You scored: ' + score + ' Feedback: ' + result);
+    alert('You scored: ' + score + '\nFeedback: ' + result);
 }
